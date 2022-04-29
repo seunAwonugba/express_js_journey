@@ -1,0 +1,20 @@
+{
+    "name": "express-tutorial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "thirdPartyMiddleWare.js",
+    "scripts": {
+        "start": "node thirdPartyMiddleWare.js",
+        "dev": "nodemon thirdPartyMiddleWare.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "morgan": "^1.10.0"
+    }
+}
