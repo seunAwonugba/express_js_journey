@@ -1,7 +1,7 @@
 const studentsData = [
     {
         id: 1,
-        firstName: "seun",
+        firstName: "oluwaseun",
         lastName: "awonugba",
         age: 27,
         gender: "Male",
