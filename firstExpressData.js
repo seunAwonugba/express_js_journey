@@ -49,4 +49,8 @@ const studentsData = [
     },
 ];
 
+//note we have 2 types of export
+// 1. named export
+// module.exports = { myStudents: studentsData };
+// 2. default export module.export = studentsData
 module.exports = studentsData;

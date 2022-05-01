@@ -2,10 +2,10 @@
     "name": "express-tutorial",
     "version": "1.0.0",
     "description": "",
-    "main": "thirdPartyMiddleWare.js",
+    "main": "crud.js",
     "scripts": {
-        "start": "node thirdPartyMiddleWare.js",
-        "dev": "nodemon thirdPartyMiddleWare.js"
+        "start": "node crud.js",
+        "dev": "nodemon crud.js"
     },
     "keywords": [],
     "author": "",
@@ -14,6 +14,7 @@
         "nodemon": "^2.0.15"
     },
     "dependencies": {
+        "axios": "^0.27.2",
         "express": "^4.17.3",
         "morgan": "^1.10.0"
     }
