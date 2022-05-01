@@ -120,6 +120,31 @@ app.put("/api/v1/students/:studentId", (req, res) => {
     }
 });
 
+//delete request
+app.delete("/api/v1/students/:studentId", (req, res) => {
+    const { studentId } = req.params;
+
+    const singleStudent = students.find((element) => {
+        return element.id == studentId;
+    });
+
+    if (!singleStudent) {
+        return res.status(404).json({
+            success: false,
+            data: `Student with id: ${studentId} does not exist`,
+        });
+    } else {
+        const filteredStudentsData = students.filter((element) => {
+            return element.id != studentId;
+        });
+
+        return res.status(200).json({
+            success: true,
+            data: filteredStudentsData,
+        });
+    }
+});
+
 // app.post("/api/v1/postman", (req, res) => {
 //     const { name } = req.body;
 //     console.log(name);
